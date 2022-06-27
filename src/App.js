@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import appStyle from './App.module.css'
+import AwardsContainer from './components/AwardsContainer'
+import MetricsContainer from './components/MetricsContainer'
+import Logo from './components/Logo'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={appStyle.section_app_container}>
+      <Logo />
+      <MetricsContainer />
+      <AwardsContainer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

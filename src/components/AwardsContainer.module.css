@@ -1,0 +1,57 @@
+.section_awards_container {
+  white-space: nowrap;
+  width: 300px;
+  margin: 50px auto 80px auto;
+  margin-left: 620px;
+
+  animation-duration: 700ms;
+  animation-name: fade-in;
+  animation-delay: 200ms;
+}
+
+.section_awards_play_store {
+  background-size: 55px 55px;
+  height: 55px;
+  padding: 5px 0 5px 60px;
+  font-size: 15px;
+  line-height: 25px;
+  margin-right: 40px;
+
+  display: inline-block;
+  font-family: sans-serif;
+  background-image: url(../images/play-store2x.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  color: rgba(60, 60, 60, 0.8);
+  font-weight: bold;
+}
+
+.section_awards_apple {
+  background-size: 55px 55px;
+  height: 55px;
+  padding: 5px 0 5px 60px;
+  font-size: 15px;
+  line-height: 25px;
+  margin-right: 40px;
+
+  display: inline-block;
+  font-family: sans-serif;
+  background-image: url(../images/badge-apple4x.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  color: rgba(60, 60, 60, 0.8);
+  font-weight: bold;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 700ms ease-in-out 500ms;
+  }
+}

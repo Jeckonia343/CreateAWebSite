@@ -1,0 +1,10 @@
+.section_app_container {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.section_metrics_container {
+  margin-left: 350px;
+  padding-top: 150px;
+  text-align: center;
+  
+  animation-duration: 700ms;
+  animation-name: fade-in;
+  animation-delay: 100ms;
+}
+
+.section_metrics_item {
+  color: #3a3a3a;
+  font-family: sans-serif;
+
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 700ms ease-in-out 300ms;
+  }
+}
